@@ -1,0 +1,35 @@
+.menu-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.menu-icon__line {
+	width: 20px;
+	height: 2px;
+	background-color: #444;
+	transition: all 0.2s ease-in-out;
+}
+
+.menu-icon__line:first-child {
+	transform: translateY(-4px);
+}
+
+.menu-icon__line:last-child {
+	transform: translateY(4px);
+}
+
+.menu-icon.active .menu-icon__line:first-child {
+	transform: translateY(0px) rotate(45deg);
+}
+
+.menu-icon.active .menu-icon__line:last-child {
+	transform: translateY(0px) rotate(-45deg);
+}
+
+.menu-icon.active .menu-icon__line:nth-child(2) {
+	opacity: 0;
+}

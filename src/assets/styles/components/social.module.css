@@ -1,0 +1,5 @@
+.logo {
+	height: 36px; /* set a fixed height for the images */
+	vertical-align: middle; /* align the images vertically */
+	fill: red; /* change the fill color of the SVG */
+}

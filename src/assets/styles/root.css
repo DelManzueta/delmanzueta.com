@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700;900&family=DM+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;800&display=swap');
+:root {
+	/* Fonts */
+	--body: 'Golos Text', sans-serif;
+	--header: 'Albert Sans', sans-serif;
+
+	/* Default Colors */
+	--blue: rgba(91, 143, 253, 1);
+	--light-blue: rgba(0, 153, 204, 1);
+	--tri-blue: rgba(169, 212, 195, 1);
+	--green: rgba(101, 177, 135, 1);
+	--rose: rgba(240, 193, 188, 1);
+	--gray: rgba(197, 204, 212, 1);
+	--yellow: rgba(237, 245, 113, 1);
+	--black: rgba(21, 29, 35, 1);
+	--white: rgba(248, 247, 243, 1);
+
+	/* Custom Colors */
+	--bg: rgba(221, 201, 180, 1);
+	--font-color: rgba(42, 61, 69, 1);
+	--muted: rgba(122, 108, 93, 1);
+	--accent-light: rgba(188, 172, 155, 1);
+	--accent-alt: rgba(193, 124, 116, 1);
+}
+
+/* Gradients */
+.gradient-top {
+	background-image: linear-gradient(
+		0deg,
+		#7a6c5dff,
+		#2a3d45ff,
+		#ddc9b4ff,
+		#bcac9bff,
+		#c17c74ff
+	);
+}
+
+.gradient-right {
+	background-image: linear-gradient(
+		90deg,
+		#7a6c5dff,
+		#2a3d45ff,
+		#ddc9b4ff,
+		#bcac9bff,
+		#c17c74ff
+	);
+}
+
+.gradient-bottom {
+	background-image: linear-gradient(
+		180deg,
+		#7a6c5dff,
+		#2a3d45ff,
+		#ddc9b4ff,
+		#bcac9bff,
+		#c17c74ff
+	);
+}
+
+.gradient-left {
+	background-image: linear-gradient(
+		270deg,
+		#7a6c5dff,
+		#2a3d45ff,
+		#ddc9b4ff,
+		#bcac9bff,
+		#c17c74ff
+	);
+}
+
+.gradient-top-right {
+	background-image: linear-gradient(
+		45deg,
+		#7a6c5dff,
+		#2a3d45ff,
+		#ddc9b4ff,
+		#bcac9bff,
+		#c17c74ff
+	);
+}
+
+.gradient-bottom-right {
+	background-image: linear-gradient(
+		135deg,
+		#7a6c5dff,
+		#2a3d45ff,
+		#ddc9b4ff,
+		#bcac9bff,
+		#c17c74ff
+	);
+}
+
+.gradient-top-left {
+	background-image: linear-gradient(
+		225deg,
+		#7a6c5dff,
+		#2a3d45ff,
+		#ddc9b4ff,
+		#bcac9bff,
+		#c17c74ff
+	);
+}
+
+.gradient-bottom-left {
+	background-image: linear-gradient(
+		315deg,
+		#7a6c5dff,
+		#2a3d45ff,
+		#ddc9b4ff,
+		#bcac9bff,
+		#c17c74ff
+	);
+}
+
+.gradient-radial {
+	background-image: radial-gradient(
+		#7a6c5dff,
+		#2a3d45ff,
+		#ddc9b4ff,
+		#bcac9bff,
+		#c17c74ff
+	);
+}

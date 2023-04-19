@@ -1,0 +1,5 @@
+@import './components/footer.module.css';
+@import './components/header.module.css';
+@import './components/hero.module.css';
+@import './components/menuIcon.module.css';
+@import './pages/about.module.css';
