@@ -17,6 +17,7 @@
 	max-width: 75vw;
 	font-family: var(--body);
 	transition: 0.125s ease-in-out;
+	padding-bottom: 10vh;
 }
 
 .heroContent {

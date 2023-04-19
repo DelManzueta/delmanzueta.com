@@ -32,7 +32,6 @@ function TechStack() {
 
 	return (
 		<div className={techStackStyles.container}>
-			<h3 className={techStackStyles.title}>Tech Stack</h3>
 			<ul className={techStackStyles.techStack}>
 				{techStackItems.map((item, index) => (
 					<li

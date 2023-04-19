@@ -1,5 +1,7 @@
 .about {
-	background-color: var(--yellow);
+	width: 50vw;
+	display: flex;
+	margin: 0 auto;
 }
 
 .aboutContent {
