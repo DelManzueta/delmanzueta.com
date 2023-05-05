@@ -63,7 +63,7 @@ header {
 }
 
 .headerNav a:hover {
-	color: var(--black);
+	color: var(--white);
 	background-color: var(--blue);
 	border: 2px solid var(--black);
 	transition: color 0.31s ease-in-out;
@@ -83,10 +83,7 @@ header {
 }
 
 .headerBrand:hover {
-	color: var(--black);
-	box-shadow: -5px 5px 0px 0px var(--black);
-	border: 2px solid var(--black);
-	background-color: var(--blue);
+	color: var(--blue);
 	transition: 0.015s ease-in-out;
 }
 

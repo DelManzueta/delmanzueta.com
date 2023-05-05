@@ -114,13 +114,12 @@
 	width: 36px;
 	height: 36px;
 	margin: 0 10px;
-	color: var(--yellow);
+	color: var(--font-color);
 }
 
 .socialLinked:hover {
 	opacity: 0.8;
 	color: rgba(0, 119, 181, 1);
-	transform: translateY(-5px);
 	width: 42px;
 	transition: 0.125s ease-in-out;
 }
@@ -134,12 +133,11 @@
 		flex-direction: column;
 		padding: 5vh 0;
 	}
+	.socialLinks {
+		padding: 2.5rem 0
+	}
 }
-
-.socialLinked {
-	color: var(--font-color);
-}
-
+ 
 .socialLink:hover {
 	opacity: 0.8;
 }
