@@ -25,7 +25,7 @@ function Hero() {
 					</h5>
 					<div className={heroStyles.socialLinks}>
 						<a
-							href='https://github.com/username'
+							href='https://github.com/DelManzueta'
 							target='_blank'
 							rel='delwing manzueta'
 						>
@@ -41,7 +41,7 @@ function Hero() {
 						</a>
 
 						<a
-							href='https://linkedin.com/in/username'
+							href='https://www.linkedin.com/in/delwingmanzueta/'
 							target='_blank'
 							rel='delwing manzueta'
 						>
