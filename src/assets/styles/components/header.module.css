@@ -102,22 +102,22 @@ header {
 	align-items: center;
 	justify-content: center;
 	z-index: 1000;
-  }
-  
-  .modalContent {
+}
+
+.modalContent {
 	background-color: #fff;
 	padding: 20px;
 	border-radius: 8px;
-	min-width: 80%; 
+	min-width: 80%;
 	overflow: auto;
-  }
-  
-  .modalContent .react-pdf__Page__canvas {
+}
+
+.modalContent .react-pdf__Page__canvas {
 	height: auto;
 	margin: 0 auto;
-  }
-  
-  .modalContent .downloadIcon {
+}
+
+.modalContent .downloadIcon {
 	display: block;
 	margin: 20px auto;
 	width: 50px;
@@ -126,19 +126,29 @@ header {
 	background-size: contain;
 	background-repeat: no-repeat;
 	cursor: pointer;
-  }
-  
+}
 
 @media screen and (max-width: 768px) {
+	.header {
+		position: sticky;
+		min-width: calc(100vw - 20px);
+		max-width: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		border-bottom: 0.65rem solid var(--black);
+	}
+	.headerBrand {
+		margin-bottom: 5px;
+	}
 	.headerNav {
 		flex-direction: column;
 		position: absolute;
-		top: 70px;
 		left: 0;
 		right: 0;
-		padding: 20px;
-		background-color: #fff;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		background-color: pink;
 	}
 
 	.headerNav.show {
