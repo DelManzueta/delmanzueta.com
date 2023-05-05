@@ -1,7 +1,5 @@
 import HavenTech from '../components/HavenTech';
-// src/pages/About.jsx
 import React from 'react';
-import TimelineItem from '../assets/js/timelineItems';
 import aboutStyles from '../assets/styles/pages/about.module.css';
 
 function About() {
