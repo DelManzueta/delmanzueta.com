@@ -4,8 +4,11 @@ import React, { useEffect, useState } from 'react';
 import MenuIcon from './MenuIcon';
 import headerStyles from '../assets/styles/components/header.module.css';
 
+import resume from '../assets/docs/dm.pdf';
+
 function Header() {
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [showModal, setShowModal] = useState(false);
 
 	useEffect(() => {
 		function handleScroll() {
@@ -23,56 +26,67 @@ function Header() {
 		};
 	}, []);
 
+	const handleResumeClick = () => {
+		setShowModal(true);
+	};
+
+	const handleCloseModal = () => {
+		setShowModal(false);
+	};
+
 	return (
-		<header
-			className={`${headerStyles.header} ${
-				isScrolled ? headerStyles.scrolled : ''
-			}`}
-		>
-			<Link
-				to='top'
-				spy={true}
-				smooth={true}
-				offset={-70}
-				duration={500}
-				className={headerStyles.headerBrand}
-				onClick={() => scroll.scrollToTop()}
+		<>
+			<header
+				className={`${headerStyles.header} ${
+					isScrolled ? headerStyles.scrolled : ''
+				}`}
 			>
-				Del Manzueta
-			</Link>
-			<nav className={headerStyles.headerNav}>
 				<Link
-					to='about'
+					to='top'
 					spy={true}
 					smooth={true}
 					offset={-70}
 					duration={500}
+					className={headerStyles.headerBrand}
+					onClick={() => scroll.scrollToTop()}
 				>
-					About
+					Del Manzueta
 				</Link>
-				<Link
-					to='projects'
-					spy={true}
-					smooth={true}
-					offset={-70}
-					duration={500}
-				>
-					Projects
-				</Link>
-				<Link
-					to='contact'
-					spy={true}
-					smooth={true}
-					offset={-70}
-					duration={500}
-				>
-					Contact
-				</Link>
-			</nav>
-			<div className={headerStyles.headerMenuIcon}>
-				<MenuIcon />
-			</div>
-		</header>
+				<nav className={headerStyles.headerNav}>
+					<button
+						className={headerStyles.resumeLink}
+						onClick={handleResumeClick}
+					>
+						Resumé
+					</button>
+				</nav>
+				<div className={headerStyles.headerMenuIcon}>
+					<MenuIcon />
+				</div>
+			</header>
+			{showModal && (
+				<div className={headerStyles.modalOverlay}>
+					<div className={headerStyles.modalContent}>
+						<button
+							className={headerStyles.closeButton}
+							onClick={handleCloseModal}
+						>
+							X
+						</button>
+						<iframe
+							src={resume}
+							title='Resume'
+						/>
+						<a
+							href={resume}
+							download
+						>
+							Download
+						</a>
+					</div>
+				</div>
+			)}
+		</>
 	);
 }
 

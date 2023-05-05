@@ -33,13 +33,8 @@ function App() {
 		<div className={`app-container ${isScrolled ? 'scrolled' : ''}`}>
 			<Header id='header' />
 			<div className='app-body'>
-				<Hero />
-				<About />
-				<Projects />
-				<Testimonials />
-				<Contact />
+				<Hero /> 
 			</div>
-			<Footer />
 		</div>
 	);
 }
